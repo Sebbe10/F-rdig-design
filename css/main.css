@@ -1,0 +1,87 @@
+body {
+  box-sizing: border-box;
+  background-image: url(/assets/negative-space-black-forest-dawn.jpg);
+  background-repeat: no-repeat, repeat;
+  color: white;
+  height: 250vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 130px;
+}
+
+svg {
+  border-radius: 50%;
+  color: white;
+}
+
+footer {
+  background-color: white;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+}
+
+.text {
+  background-color: gray;
+  color: black;
+  position: absolute;
+  top: 320px;
+  box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
+}
+
+aside {
+  position: absolute;
+  top: 160%;
+  right: 10%;
+  justify-content: center;
+}
+
+.bild {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.card--dark, h6 {
+  font-size: 13px;
+  background: rgb(211, 210, 210);
+  color: black;
+  margin: 2em;
+  max-width: 400px;
+  padding: 2em;
+  box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
+  position: absolute;
+  left: 300px;
+}
+
+.card--dark1 {
+  position: absolute;
+  right: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */
