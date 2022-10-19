@@ -1,12 +1,19 @@
+@use "variabels" as v;
+
 body {
     box-sizing: border-box;
-    background-image: url(/assets/negative-space-black-forest-dawn.jpg);
+    background-image: url(/assets/negative-space-black-forest-dawn10.jpg);
     background-repeat: no-repeat, repeat;   
     color: white;
     // background-repeat: no-repeat;
     height: 250vh;
+    margin: 0;
+    padding: 0;
 }
 
+.bi-list {
+    display: none;
+}
 
 nav {
     display: flex;
@@ -22,7 +29,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 p {
@@ -35,66 +42,500 @@ p {
 }
 
 svg {
+    position: relative;
     border-radius: 50%;
     color: white;
-}
-
-
-footer {
-    background-color: white;
-    height: 100vh;
-}
-
-
-h2 {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    top: 80px;
+    left: 550px;
+    margin: auto;
 }
 
 .text {
     background-color: gray;
     color: black;
-    position: absolute;
+    // position: absolute;
     top: 320px;
     box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
 }
 
 
 
-// .card--light {
-//     position: absolute;
-//     background: #eee;
-//     border-radius: 50%;
-//     width: 20%;
-// }
-
-aside {
-    position: absolute;
-    top: 160%;
-    right: 10%;
-    justify-content: center;
-}
-
-.bild {
+.card--light {
+    // position: absolute;
+    background: #eee;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 20%;
 }
 
-
-.card--dark, h6 {
+h6 {
     font-size: 13px;
-    background: rgb(211, 210, 210);
+    background-color: v.$bgcolor;
     color: black;
     margin: 2em;
     max-width: 400px;
     padding: 2em;
     box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
+    // position: absolute;
+    left: 200px;
+}
+
+
+
+h5 {
+    display: inline;
+    position: relative;
+    font-size: 25px;
+    align-items: center;
+    color: black;
+    text-align: center;
+    top: 330px;
+    left: 540px;
+}
+
+aside {
+    display: flex;
+  
+    flex-wrap: wrap;
+    height: 250vh;
+
+
+.nummer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    border-radius: 50%;
+    width: 50%;
+}
+
+.bild1 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    flex-wrap: wrap;   
+    top: 300px;
+    left: 200px;
+}
+
+.bild2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    flex-wrap: wrap; 
+    left: 200px; 
+    top: 200px;
+}
+
+.card--dark {
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 50px;
+    margin: 0;
+    top: 320px;
+    left: 150px;
+    border-radius: 10px;
+}
+
+
+    
+element.style {
+    font-size: 50px;
     position: absolute;
-    left: 300px;
+    display: flex;
+    color: pink;
+    top: 700px;
+    left: 570px;
+    background-color: red;
+}
+
+aside .bi-quote {
+    display: inline;
+    position: relative;
+    font-size: 40px;
+}
+
+
+
+.bi-quote::before {
+    content: "";
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    right: 380px;
+}
+
+.bi-arrow-up-circle-fill::before {
+    content: "\f139";
+    font-size: 50px;
+    display: flex;
+    right: 380px;
+    position: relative;
+    bottom: 1000px;
 }
 
 .card--dark1 {
-   position: absolute;
-   right: 100px;
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 50px;
+    margin: 0;
+    top: 220px;
+    left: 150px;
+    border-radius: 10px;
 }
 
+ .namn {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    top: 300px;
+    color: black;
+    justify-content: center;
+}
+
+.namn1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 210px;
+    color: black;
+    left: 30px;
+}
+
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+   
+   a {
+    text-decoration: none;
+    color: black;
+   } 
+   
+   #down {
+    margin-top: 24%;
+    padding-bottom: 25%;
+   } 
+
+// .info {
+//     // position: absolute;
+//     display: inline;
+//     color: white;
+//     background-color: black;
+//     top: 2000px;
+//     width: 100%;
+//     height: 300px;
+// }
+
+.infotext {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: start;
+    left: 30px;
+}
+
+.kontakta {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    justify-content: center;
+}
+
+
+.iconer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 40px;
+    bottom: 330px;
+    right: 30px;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+    height: 300px;
+    gap: 10px;
+    
+}
+  aside .bi-quote::before {
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    right: 0px;
+    bottom: 70px;
+  }
+  i {
+        display: inline;
+        position: relative;
+        text-align: end;
+        top: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+
+@media screen and (max-width: 768px) { 
+
+    .conta {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+
+        appearance: none;
+        background-color: navajowhite;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar .hamburger:after, .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0.5;
+}
+   
+
+
+
+    body {
+        box-sizing: border-box;
+        background-image: url(/assets/negative-space-black-forest-dawn10.jpg);
+        background-repeat: no-repeat, repeat;   
+        color: white;
+        background-repeat: no-repeat;
+        margin: none;
+        padding: 0;
+        width: auto;
+    }
+
+   .bi-list {
+        display: flex;
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 40px;
+        left: 680px;
+        color: white;
+        font-size: 50px;
+   }
+
+    html {
+        scroll-behavior: smooth;
+       }
+       
+       a {
+        text-decoration: none;
+        color: black;
+       } 
+       
+       #down {
+        margin-top: 31%;
+        padding-bottom: 5%;
+       } 
+    
+    
+    
+
+    h5 {
+        display: flex;
+        position: relative;
+        left: 320px;
+        top: 400px;
+    }
+    
+    aside {
+        display: grid;
+        position: relative;
+        left: 50px;
+        bottom: 350px;
+        gap: 200px;
+}
+
+    p {
+        display: flex;
+        position: relative;
+        text-align: center;
+       
+    }
+
+    i {
+        display: flex;
+        position: relative;
+        left: 300px;
+        top: 450px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+  aside .namn .bild1 .card--dark {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    right: 300px;
+   
+   }
+
+   .namn1 .bild2 .card--dark1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+   }
+
+  aside .bi-quote {
+    display: contents;
+    position: relative;
+    left: 1px;
+    font-size: 50px;
+    top: 40px;
+   }
+
+   aside .bi-quote::before {
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    right: 0px;
+    bottom: 25px;
+   }
+
+   aside .bild2 {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0.08rem 0.08rem 0.08rem black;
+    flex-flow: row wrap;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    left: 200px;
+    top: 200px;
+   }
+
+   aside .namn1 {
+    display: block;
+    position: relative;
+    justify-content: center;
+    color: black;
+    left: 280px;
+    top: 200px;
+   }
+
+   aside .namn {
+    display: flex;
+    position: relative;
+    left: 120px;
+   }
+
+   aside .nummer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    width: 5%;
+   }
+
+   aside .bild1 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    flex-wrap: wrap;
+    bottom: 600px;
+    left: 200px;
+    box-shadow: 0 0.08rem 0.08rem 0.08rem black;
+   }
+
+   .infotext {
+    display: flex;
+    position: relative;
+    left: 290px;
+   }
+
+   .kontakta {
+    display: flex;
+    position: relative;
+  
+    top: 100px;
+   }
+
+   .iconer {
+    display: flex;
+    position: relative;
+    left: 30px;
+   }
+
+     footer {
+        display: flex;
+        position: relative;
+        background-color: black;
+        flex-direction: column;
+        height: 700px;
+        top:  1700px;
+     }
+
+     #vadå {
+        margin-top: 1050px;
+        padding-bottom: 105%;
+     }
+
+}
