@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+section {
+  display: none;
+}
+
 .bi-list {
   display: none;
 }
@@ -75,6 +79,12 @@ h6 {
   left: 200px;
 }
 
+.bi-arrow-down-circle-fill {
+  display: flex;
+  position: relative;
+  right: 30px;
+}
+
 h5 {
   display: inline;
   position: relative;
@@ -127,17 +137,8 @@ aside .card--dark {
   height: 50px;
   margin: 0;
   top: 320px;
-  left: 150px;
+  left: 120px;
   border-radius: 10px;
-}
-aside element.style {
-  font-size: 50px;
-  position: absolute;
-  display: flex;
-  color: pink;
-  top: 700px;
-  left: 570px;
-  background-color: red;
 }
 aside aside .bi-quote {
   display: inline;
@@ -145,14 +146,12 @@ aside aside .bi-quote {
   font-size: 40px;
 }
 aside .bi-quote::before {
-  content: "\f6b0";
   font-size: 50px;
   display: flex;
   position: relative;
   right: 380px;
 }
 aside .bi-arrow-up-circle-fill::before {
-  content: "\f139";
   font-size: 50px;
   display: flex;
   right: 380px;
@@ -207,6 +206,16 @@ a:after {
 
 a:hover:after {
   width: 100%;
+}
+
+.bi-arrow-down-circle-fill::before {
+  content: "\f118";
+  display: flex;
+  position: relative;
+  font-size: 75px;
+  bottom: 1900px;
+  left: 600px;
+  color: white;
 }
 
 html {
@@ -264,6 +273,33 @@ aside .bi-quote::before {
   bottom: 70px;
 }
 
+.bi-arrow-up-circle-fill::before {
+  display: flex;
+  position: relative;
+  left: 630px;
+  bottom: 500px;
+  color: black;
+}
+
+.bi-arrow-up-circle-fill {
+  display: flex;
+  position: relative;
+  top: 0px;
+}
+
+#ser.bi-arrow-down-circle-fill {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.bi-arrow-down-circle-fill::before {
+  display: flex;
+  position: relative;
+  bottom: 2000px;
+  color: white;
+}
+
 i {
   display: inline;
   position: relative;
@@ -275,58 +311,183 @@ i {
 @media screen and (max-width: 768px) {
   body {
     box-sizing: border-box;
-    background-image: url(/assets/negative-space-black-forest-dawn10.jpg);
-    background-repeat: no-repeat, repeat;
+    background-image: url(/assets/träd.jpg);
     color: white;
     background-repeat: no-repeat;
     margin: none;
     padding: 0;
+    width: 100%;
     width: auto;
   }
-  .bi-list {
+  li {
+    display: none;
+  }
+  p {
     display: flex;
+    position: relative;
+    top: 100px;
+  }
+  nav {
+    display: none;
+  }
+  .top-nav {
+    display: none;
+    position: relative;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  h2 {
+    vertical-align: center;
+    text-align: center;
+  }
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  * {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FFF;
+    height: 50px;
+    padding: 1em;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  .menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
     position: absolute;
-    width: 250px;
-    height: 250px;
-    top: 40px;
-    left: 680px;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    font-size: 25px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    cursor: pointer;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    cursor: pointer;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
     color: white;
-    font-size: 50px;
   }
   html {
     scroll-behavior: smooth;
   }
   a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 22px;
   }
   #down {
-    margin-top: 31%;
-    padding-bottom: 5%;
-  }
-  h5 {
     display: flex;
     position: relative;
-    left: 320px;
-    top: 400px;
+    margin-top: 30%;
+    width: 1%;
+  }
+  h5 {
+    display: initial;
+    position: relative;
+    left: 340px;
+    top: 1080px;
   }
   aside {
     display: grid;
     position: relative;
-    left: 50px;
-    bottom: 350px;
+    bottom: 300px;
     gap: 200px;
   }
   p {
     display: flex;
     position: relative;
     text-align: center;
+    top: 170px;
   }
   i {
     display: flex;
     position: relative;
-    left: 300px;
-    top: 450px;
+    left: 360px;
+    top: 350px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   aside .namn .bild1 .card--dark {
@@ -335,6 +496,26 @@ i {
     flex-direction: column;
     flex-wrap: wrap;
     right: 300px;
+  }
+  aside .card--dark {
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 50px;
+    margin: 0;
+    top: 360px;
+    left: 220px;
+    border-radius: 10px;
+  }
+  aside .card--dark1 {
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 50px;
+    margin: 0px;
+    top: 220px;
+    left: 220px;
+    border-radius: 10px;
   }
   .namn1 .bild2 .card--dark1 {
     display: flex;
@@ -357,29 +538,19 @@ i {
     right: 0px;
     bottom: 25px;
   }
-  aside .bild2 {
+  aside .namn {
     display: flex;
     position: relative;
-    box-shadow: 0 0.08rem 0.08rem 0.08rem black;
-    flex-flow: row wrap;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    left: 200px;
-    top: 200px;
+    top: 360px;
+    left: 230px;
   }
   aside .namn1 {
     display: block;
     position: relative;
     justify-content: center;
     color: black;
-    left: 280px;
-    top: 200px;
-  }
-  aside .namn {
-    display: flex;
-    position: relative;
-    left: 120px;
+    left: 380px;
+    top: 180px;
   }
   aside .nummer {
     display: flex;
@@ -396,24 +567,45 @@ i {
     height: 250px;
     width: 250px;
     flex-wrap: wrap;
-    bottom: 600px;
-    left: 200px;
-    box-shadow: 0 0.08rem 0.08rem 0.08rem black;
+    top: 350px;
+    left: 280px;
+    box-shadow: 0 0.28rem 0.28rem 0.28rem rgb(157, 157, 157);
+  }
+  aside .bild2 {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0.28rem 0.28rem 0.28rem rgb(157, 157, 157);
+    flex-flow: row wrap;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    left: 280px;
+    top: 180px;
+  }
+  .adress {
+    display: flex;
+    position: relative;
+    top: 30px;
+  }
+  .mail {
+    display: flex;
+    position: relative;
+    top: 10px;
   }
   .infotext {
-    display: flex;
+    display: contents;
     position: relative;
     left: 290px;
   }
   .kontakta {
     display: flex;
     position: relative;
-    top: 100px;
+    top: 1px;
   }
   .iconer {
-    display: flex;
+    display: inline-grid;
     position: relative;
-    left: 30px;
+    justify-content: start;
   }
   footer {
     display: flex;
@@ -421,7 +613,38 @@ i {
     background-color: black;
     flex-direction: column;
     height: 700px;
-    top: 1700px;
+    top: 2000px;
+  }
+  .bi-arrow-down-circle-fill::before {
+    display: flex;
+    position: relative;
+    bottom: 4530px;
+    left: 50px;
+    color: white;
+    font-size: 75px;
+  }
+  .bi-arrow-up-circle-fill::before {
+    content: "\f139";
+    display: none;
+  }
+  .bi-arrow-down-circle-fill {
+    display: flex;
+    position: relative;
+    top: 500px;
+    color: red;
+    cursor: pointer;
+  }
+  .bi-arrow-down-circle-fill {
+    display: flex;
+    font-size: 75px;
+    cursor: pointer;
+    bottom: 100px;
+  }
+  i.bi-arrow-down-circle-fill {
+    display: flex;
+    position: relative;
+    top: 400px;
+    left: 300px;
   }
   #vadå {
     margin-top: 1050px;
