@@ -45,6 +45,7 @@ p {
     min-height: 130px;   
 }
 
+
 svg {
     position: relative;
     border-radius: 50%;
@@ -92,6 +93,13 @@ h6 {
   right: 30px;
 }
 
+i.bi-arrow-down-short {
+  display: none;
+}
+
+#downtodown {
+  display: none;
+}
 
 h5 {
     display: inline;
@@ -100,7 +108,7 @@ h5 {
     align-items: center;
     color: black;
     text-align: center;
-    top: 330px;
+    top: 390px;
     left: 540px;
 }
 
@@ -147,23 +155,13 @@ aside {
     display: flex;
     position: relative;
     width: 350px;
-    height: 50px;
+    height: 20px;
     margin: 0;
     top: 320px;
     left: 120px;
     border-radius: 10px;
+    font-family: sans-serif;
 }
-
-    
-// element.style {
-    // font-size: 50px;
-    // position: absolute;
-    // display: flex;
-    // // color: pink;
-    // top: 700px;
-    // left: 570px;
-    // background-color: red;
-// }
 
 aside .bi-quote {
     display: inline;
@@ -180,23 +178,16 @@ aside .bi-quote {
     right: 380px;
 }
 
-.bi-arrow-up-circle-fill::before {
-    font-size: 50px;
-    display: flex;
-    right: 380px;
-    position: relative;
-    bottom: 1000px;
-}
-
 .card--dark1 {
     display: flex;
     position: relative;
     width: 350px;
-    height: 50px;
+    height: 20px;
     margin: 0;
     top: 220px;
     left: 150px;
     border-radius: 10px;
+    font-family: sans-serif;
 }
 
  .namn {
@@ -266,16 +257,6 @@ html {
     padding-bottom: 25%;
    } 
 
-// .info {
-//     // position: absolute;
-//     display: inline;
-//     color: white;
-//     background-color: black;
-//     top: 2000px;
-//     width: 100%;
-//     height: 300px;
-// }
-
 .infotext {
     display: flex;
     position: relative;
@@ -326,27 +307,6 @@ footer {
     color: black;
 }
 
-.bi-arrow-up-circle-fill {
-  display: flex;
-  position: relative;
-  top: 0px;
-}
-
-#ser.bi-arrow-down-circle-fill {
-  display: flex;
-  position: relative;
-  
-  cursor: pointer;
-}
-
-.bi-arrow-down-circle-fill::before {
-  
-  display: flex;
-  position: relative;
-  bottom: 2000px;
-  color: white;
-}
-
   i {
         display: inline;
         position: relative;
@@ -369,6 +329,39 @@ footer {
         width: auto;
     }
 
+    div i.bi-arrow-down-short {
+      display: flex;
+      position: relative;
+      background-color: black;
+      top: 2950px;
+      font-size: 50px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+    }
+#downto {
+  margin-top: 124%;
+}
+
+ i.bi-arrow-down {
+
+  display: flex;
+  position: relative;
+  background-color: white;
+  color: black;
+  top: 10px;
+  font-size: 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+  
+#nedned {
+  margin-top: 100%;
+}
+
      li {
       display: none;
     }
@@ -390,6 +383,14 @@ footer {
     }
 
 
+    .bi-arrow-up-circle-fill::before {
+      display: none;
+      position: relative;
+      left: 630px;
+      bottom: 500px;
+      color: white;
+  }
+
 
     @import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
@@ -403,7 +404,7 @@ html, body {
 }
 
 * {
-  font-family: "Raleway";
+  // font-family: "Raleway";
   box-sizing: border-box;
 }
 
@@ -557,11 +558,11 @@ html, body {
     
     
 
-    h5 {
-        display: initial;
+   h5 {
+        display: inline-flex;
         position: relative;
         left: 340px;
-        top: 1080px;
+        top: 700px;
     }
     
     aside {
@@ -579,8 +580,20 @@ html, body {
        top: 170px;
     }
 
+    i.bi.bi-instagram {
+      display: flex;
+    }
+
+    i.bi.bi-twitter {
+      display: flex;
+    }
+
+    i.bi.bi-facebook {
+      display: flex;
+    }
+
     i  { 
-        display: flex;
+        display: none;
         position: relative;
         left: 360px;
         top: 350px;
@@ -606,6 +619,7 @@ html, body {
     top: 360px;
     left: 220px;
     border-radius: 10px;
+    font-size: 12px;
    }
 
    aside .card--dark1 {
@@ -617,6 +631,7 @@ html, body {
     top: 220px;
     left: 220px;
     border-radius: 10px;
+    font-size: 12px;
    }
 
    .namn1 .bild2 .card--dark1 {
@@ -626,6 +641,8 @@ html, body {
     flex-wrap: wrap;
     text-align: center;
    }
+
+   
 
   aside .bi-quote {
     display: contents;
@@ -645,9 +662,6 @@ html, body {
     bottom: 25px;
    }
 
-
-
-   
    aside .namn {
     display: flex;
     position: relative;
@@ -660,7 +674,7 @@ html, body {
     position: relative;
     justify-content: center;
     color: black;
-    left: 380px;
+    left: 365px;
     top: 180px;
    }
 
@@ -740,54 +754,22 @@ html, body {
         background-color: black;
         flex-direction: column;
         height: 700px;
-        top:  2000px;
+        top:  1600px;
      }
 
-     
 
-  
 
-     .bi-arrow-down-circle-fill::before {
-        display: flex;
-        position: relative;
-        bottom: 4530px;
-        left: 50px;
-        color: white;
-        font-size: 75px;
-    }
-   
-    .bi-arrow-up-circle-fill::before {
-      content: "\f139";
+     #down10 {
       display: none;
-  }
-
-    .bi-arrow-down-circle-fill {
-      display: flex;
-      position: relative;
-      // left: 300px;
-      top: 500px;
-      color: red;
-      cursor: pointer;
-    }
- 
-    .bi-arrow-down-circle-fill {
-       display: flex;
-       font-size: 75px;
-       cursor: pointer;
-       bottom: 100px;
-    }
-
-    i.bi-arrow-down-circle-fill {
-      display: flex;
-      position: relative;
-      top: 400px;
-     left: 300px;
-    }
-
-
-     #vadå {
-        margin-top: 1050px;
-        padding-bottom: 105%;
      }
 
-}
+     #up {
+      display: none;
+     }
+
+     #buttonarrow {
+      display: none;
+      position: relative;
+  
+     }
+    }

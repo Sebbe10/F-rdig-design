@@ -85,14 +85,6 @@ h6 {
   right: 30px;
 }
 
-i.bi-arrow-down-short {
-  display: none;
-}
-
-#downtodown {
-  display: none;
-}
-
 h5 {
   display: inline;
   position: relative;
@@ -100,7 +92,7 @@ h5 {
   align-items: center;
   color: black;
   text-align: center;
-  top: 390px;
+  top: 330px;
   left: 540px;
 }
 
@@ -142,12 +134,11 @@ aside .card--dark {
   display: flex;
   position: relative;
   width: 350px;
-  height: 20px;
+  height: 50px;
   margin: 0;
   top: 320px;
   left: 120px;
   border-radius: 10px;
-  font-family: sans-serif;
 }
 aside aside .bi-quote {
   display: inline;
@@ -160,16 +151,22 @@ aside .bi-quote::before {
   position: relative;
   right: 380px;
 }
+aside .bi-arrow-up-circle-fill::before {
+  font-size: 50px;
+  display: flex;
+  right: 380px;
+  position: relative;
+  bottom: 1000px;
+}
 aside .card--dark1 {
   display: flex;
   position: relative;
   width: 350px;
-  height: 20px;
+  height: 50px;
   margin: 0;
   top: 220px;
   left: 150px;
   border-radius: 10px;
-  font-family: sans-serif;
 }
 aside .namn {
   display: flex;
@@ -284,6 +281,25 @@ aside .bi-quote::before {
   color: black;
 }
 
+.bi-arrow-up-circle-fill {
+  display: flex;
+  position: relative;
+  top: 0px;
+}
+
+#ser.bi-arrow-down-circle-fill {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.bi-arrow-down-circle-fill::before {
+  display: flex;
+  position: relative;
+  bottom: 2000px;
+  color: white;
+}
+
 i {
   display: inline;
   position: relative;
@@ -303,35 +319,6 @@ i {
     width: 100%;
     width: auto;
   }
-  div i.bi-arrow-down-short {
-    display: flex;
-    position: relative;
-    background-color: black;
-    top: 2950px;
-    font-size: 50px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-  }
-  #downto {
-    margin-top: 124%;
-  }
-  i.bi-arrow-down {
-    display: flex;
-    position: relative;
-    background-color: white;
-    color: black;
-    top: 10px;
-    font-size: 50px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-  }
-  #nedned {
-    margin-top: 100%;
-  }
   li {
     display: none;
   }
@@ -347,13 +334,6 @@ i {
     display: none;
     position: relative;
   }
-  .bi-arrow-up-circle-fill::before {
-    display: none;
-    position: relative;
-    left: 630px;
-    bottom: 500px;
-    color: white;
-  }
   @import url(https://fonts.googleapis.com/css?family=Raleway);
   h2 {
     vertical-align: center;
@@ -364,6 +344,7 @@ i {
     height: 100%;
   }
   * {
+    font-family: "Raleway";
     box-sizing: border-box;
   }
   .top-nav {
@@ -485,10 +466,10 @@ i {
     width: 1%;
   }
   h5 {
-    display: inline-flex;
+    display: initial;
     position: relative;
     left: 340px;
-    top: 700px;
+    top: 1080px;
   }
   aside {
     display: grid;
@@ -502,17 +483,8 @@ i {
     text-align: center;
     top: 170px;
   }
-  i.bi.bi-instagram {
-    display: flex;
-  }
-  i.bi.bi-twitter {
-    display: flex;
-  }
-  i.bi.bi-facebook {
-    display: flex;
-  }
   i {
-    display: none;
+    display: flex;
     position: relative;
     left: 360px;
     top: 350px;
@@ -534,7 +506,6 @@ i {
     top: 360px;
     left: 220px;
     border-radius: 10px;
-    font-size: 12px;
   }
   aside .card--dark1 {
     display: flex;
@@ -545,7 +516,6 @@ i {
     top: 220px;
     left: 220px;
     border-radius: 10px;
-    font-size: 12px;
   }
   .namn1 .bild2 .card--dark1 {
     display: flex;
@@ -643,18 +613,26 @@ i {
     background-color: black;
     flex-direction: column;
     height: 700px;
-    top: 1600px;
+    top: 2000px;
   }
-  #down10 {
-    display: none;
-  }
-  #up {
-    display: none;
-  }
-  #buttonarrow {
-    display: none;
+  .bi-arrow-down-circle-fill::before {
+    display: flex;
     position: relative;
+    bottom: 4530px;
+    left: 50px;
+    color: rgb(255, 0, 0);
+    font-size: 75px;
+  }
+  fa-thin fa-circle-dow {
+    display: flex;
+    position: relative;
+    color: red;
+    font-size: 75px;
+  }
+  #vadå {
+    margin-top: 1050px;
+    padding-bottom: 105%;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.csss.map */
