@@ -1,4 +1,3 @@
-
 @use "variabels" as v;
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
@@ -141,10 +140,6 @@ aside {
 }
 }
 
-#ser {
-  display: none;
-}
-
 a {
     position: relative;
     text-decoration: none;
@@ -189,6 +184,10 @@ i.bi-arrow-down::before {
     bottom: 1800px;
     left: 200px;
     color: white;
+}
+
+.bi-arrow-down-circle {
+  display: none;
 }
 
 #about {
@@ -240,16 +239,6 @@ html {
     width: 100%;
 }
 
-footer {
-    display: block;
-    position: relative;
-    flex-direction: column;
-    background-color: black;
-    top: 300px;
-    height: 300px;
-    gap: 10px;
-    width: 100%;
-}
   aside .bi-quote::before {
     font-size: 50px;
     display: flex;
@@ -276,9 +265,16 @@ i {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
-  .bi-arrow-down-circle {
-    display: none;
-  }
+  footer {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+    top: 300px;
+    height: 300px;
+    gap: 10px;
+    width: 100%;
+}
 
 @media screen and (max-width: 768px) { 
 
@@ -428,6 +424,7 @@ i {
   position: relative;
   bottom: 2450px;
   left: auto;
+  font-size: 60px;
 }
 
     li {
