@@ -1,0 +1,696 @@
+@use "variabels" as v;
+
+body {
+    box-sizing: border-box;
+    background-image: url(/assets/negative-space-black-forest-dawn11.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    margin: none;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+  display: none;
+  
+}
+
+.bi-list {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    width: 100%;
+}
+
+p {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 130px;   
+}
+
+div.infotext {
+  width: 100%;
+  display: table-header-group;
+  position: relative;
+}
+
+.text {
+    background-color: gray;
+    color: black;
+    top: 320px;
+    box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
+}
+
+h5 {
+  display: inline;
+  position: relative;
+  font-size: 25px;
+  align-items: center;
+  color: black;
+  text-align: center;
+  top: 390px;
+  left: 540px;
+}
+
+h6 {
+    font-size: 13px;
+    background-color: v.$bgcolor;
+    color: black;
+    margin: 2em;
+    max-width: 400px;
+    padding: 2em;
+    box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
+    // position: absolute;
+    left: 200px;
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250vh;
+    width: 100%;
+
+.nummer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    border-radius: 50%;
+    width: 50%;
+}
+
+.bild1 {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  top: 250px;
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0.45rem 0.45rem 0.45rem rgb(199, 199, 199);
+}
+
+.namn1 {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  transform: translateY(600%);
+}
+
+.card--dark {
+  display: flex;
+  position: relative;
+  margin: 0;
+  width: 350px;
+  justify-content: center;
+  font-family: sans-serif;
+  transform: translateY(200%);
+   left: 100px;
+  background-color: rgb(209, 209, 209);
+}
+
+.namn1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 270px;
+    color: black;
+    margin: auto;
+}
+}
+
+#ser {
+  display: none;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+a:after {
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+i.bi-arrow-down-short {
+  display: none;
+
+}
+i.bi-arrow-down::before {
+  display: none;
+}
+
+.bi-arrow-down-circle-fill {
+  display: flex;
+  position: relative;  
+  right: 300px;
+}
+
+.bi-arrow-down-circle-fill::before {
+    display: block;
+    position: relative;
+    font-size: 75px;
+    bottom: 1800px;
+    left: 200px;
+    color: white;
+}
+
+#about {
+  margin-top: 3%;
+}
+
+#downtodown {
+  display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+   }
+   
+   #down {
+    margin-top: 24%;
+    padding-bottom: 25%;
+   } 
+
+.infotext {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: start;
+    left: 30px;
+}
+
+.kontakta {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact {
+  display: flex;
+  position: relative;
+  right: 10px;
+}
+
+.iconer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 40px;
+    bottom: 330px;
+    right: 30px;
+    width: 100%;
+}
+
+footer {
+    display: block;
+    position: relative;
+    flex-direction: column;
+    background-color: black;
+    top: 300px;
+    height: 300px;
+    gap: 10px;
+    width: 100%;
+}
+  aside .bi-quote::before {
+    font-size: 50px;
+    display: flex;
+    position: relative;
+    right: 0px;
+    bottom: 70px;
+    rotate: 180deg;
+    right: 10px;
+  }
+
+  .bi-arrow-up-circle-fill::before {
+    display: flex;
+    position: relative;
+    width: 640px;
+    bottom: 160px;
+    color: black;
+}
+
+i {
+        display: inline;
+        position: relative;
+        text-align: end;
+        top: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .bi-arrow-down-circle {
+    display: none;
+  }
+
+@media screen and (max-width: 768px) { 
+
+    body {
+        box-sizing: border-box;
+        background-image: url(/assets/träd.jpg);
+        color: white;
+        background-repeat: no-repeat;
+        margin: none;
+        padding: 0;
+        width: 100%;
+        width: auto;
+    }
+
+  .nummer, .namn1 {
+    display: flex;
+    position: relative;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    #b1 {
+      display: flex;
+      position: relative;
+      margin: auto;
+      flex-wrap: wrap;
+      top: 320px;
+      left: 220px;
+    }
+
+    #dark1 {
+      display: flex;
+      position: relative;
+      height: 150px;
+      border-radius: 10px;
+      font-size: 16px;
+      justify-content: center;
+      left: 230px;
+      top: 30px;
+    }
+
+   #n1 {
+      display: flex;
+      position: absolute; 
+      top: 130px;
+      left: 370px; 
+    }
+
+    #b2 {
+      display: flex;
+      position: relative;
+      top: 900px;
+      right: 160px;
+    }
+
+    #dark2 {
+      display: flex;
+      position: relative;
+      height: 150px;
+      border-radius: 10px;
+      font-size: 16px;
+      justify-content: center;
+      top: 610px;
+      left: -150px;
+    }
+
+    #n2 {
+      display: flex;
+      position: absolute;
+      top: 850px;
+      left: -20px;
+    }
+
+    #b3 {
+      display: flex;
+      position: relative;
+      top: 800px;
+      left: 210px;
+    }
+
+    #dark3 {
+      display: flex;
+      position: relative;
+      height: 150px;
+      border-radius: 10px;
+      font-size: 16px;
+      justify-content: center;
+      top:510px;
+      left: 220px;
+    }
+
+    #n3 {
+      display: flex;
+      position: absolute;
+      top: 590px;
+      left: 370px;
+    }
+
+    #contact {
+      display: flex;
+      position: relative;
+      right: 10px;
+      transform: translateY(40px);
+    }
+
+    #b4 {
+      display: flex;
+      position: relative;
+      top: 1400px;
+      right: 170px;
+    }
+
+    #dark4 {
+      display: flex;
+      position: relative;
+      height: 150px;
+      border-radius: 10px;
+      font-size: 16px;
+      justify-content: center;
+      top: 1120px;
+      left: -170px;
+    }
+
+    #n4 {
+      display: flex;
+      position: absolute;
+      top: 1200px;
+      left: -30px;
+    }
+
+    div i.bi-arrow-down-short {
+      display: flex;
+      position: relative;
+      background-color: black;
+      top: 2900px;
+      right: auto;
+      font-size: 50px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+    }
+
+.bi-arrow-down-circle-fill:before {
+  display: flex;
+  position: relative;
+  bottom: 2450px;
+  left: auto;
+}
+
+    li {
+      display: none;
+    }
+
+    p {
+        display: flex;
+        position: relative;
+        top: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .top-nav {
+      display: none;
+      position: relative;
+     
+    }
+
+    .bi-arrow-up-circle-fill::before {
+      display: none;
+      position: relative;
+      left: 630px;
+      bottom: 500px;
+      color: white;
+  }
+
+    html {
+        scroll-behavior: smooth;
+       }
+       
+       a {
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        display: flex;
+       } 
+       
+       #down {
+        display: flex;
+        position: relative;
+        margin-top: 30%;
+        width: 1%;
+       } 
+    
+   h5 {
+        display: inline;
+        position: relative;
+        left: 340px;
+        top: 420px;
+    }
+
+    #down10 {
+      margin-top: 7%;
+    }
+
+    #om {
+      margin-top: 162px;
+    }
+
+    .bi-quote {
+      display: flex;
+      position: relative;
+      left: 300px;
+      top: 20px;
+      left: auto;
+    }
+
+    i.bi.bi-instagram {
+      display: flex;
+    }
+
+    i.bi.bi-twitter {
+      display: flex;
+    }
+
+    i.bi.bi-facebook {
+      display: flex;
+    }
+
+    i  { 
+        display: none;
+        position: relative;
+        left: 360px;
+        top: 350px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+   .adress {
+    display: flex;
+    position: relative;
+    top: -35px;
+    right: -90px;
+    width: 580px;
+   }
+
+   .mail {
+    display: flex;
+    position: relative;
+    top: 10px;
+    width: 100%;
+   }
+
+   .infotext {
+    display: contents;
+    position: relative;
+    width: 100%;
+   }
+
+   .kontakta {
+    display: flex;
+    position: relative;
+    top: 1px;
+    width: 100%;
+   }
+
+   div .iconer {
+    display: inline;
+   }
+
+   div.infotext {
+    width: 100%;
+    display: contents;
+    position: relative;
+  }
+
+   .iconer {
+    display: inline-grid;
+    position: relative;
+    justify-content: start;
+    width: 100%;
+   }
+
+     footer {
+        display: flex;
+        position: relative;
+        background-color: black;
+        flex-direction: column;
+        height: 700px;
+        width: 100%;
+        top:  1420px;
+     }
+
+     @import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+     .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+    }
+  }
