@@ -110,13 +110,6 @@ aside {
   box-shadow: v.$shadow;
 }
 
-.namn1 {
-  display: flex;
-  position: absolute;
-  margin: auto;
-  transform: translateY(600%);
-}
-
 .card--dark {
   display: flex;
   position: relative;
@@ -127,7 +120,6 @@ aside {
   transform: translateY(200%);
    left: 100px;
   background-color:v.$bgcolor; 
-  // rgb(209, 209, 209)
 }
 
 .namn1 {
@@ -135,6 +127,7 @@ aside {
     position: relative;
     justify-content: center;
     top: 270px;
+    transform: translateY(600%);
     color: black;
     margin: auto;
 }
@@ -188,6 +181,14 @@ i.bi-arrow-down::before {
 
 .bi-arrow-down-circle {
   display: none;
+}
+
+.bi-arrow-up-circle-fill::before {
+  display: flex;
+  position: relative;
+  width: 640px;
+  bottom: 160px;
+  color: black;
 }
 
 #about {
@@ -248,14 +249,6 @@ html {
     rotate: 180deg;
     right: 10px;
   }
-
-  .bi-arrow-up-circle-fill::before {
-    display: flex;
-    position: relative;
-    width: 640px;
-    bottom: 160px;
-    color: black;
-}
 
 i {
         display: inline;
@@ -562,7 +555,6 @@ i {
         width: 100%;
         top:  1420px;
      }
-
 
 h2 {
   vertical-align: center;
