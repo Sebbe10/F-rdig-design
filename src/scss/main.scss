@@ -374,13 +374,6 @@ i {
       left: 370px;
     }
 
-    #contact {
-      display: flex;
-      position: relative;
-      right: 10px;
-      transform: translateY(40px);
-    }
-
     #b4 {
       display: flex;
       position: relative;
@@ -447,14 +440,6 @@ i {
      
     }
 
-    .bi-arrow-up-circle-fill::before {
-      display: none;
-      position: relative;
-      left: 630px;
-      bottom: 500px;
-      color: white;
-  }
-
     html {
         scroll-behavior: smooth;
        }
@@ -481,7 +466,7 @@ i {
     }
 
     #down10 {
-      margin-top: 7%;
+      margin-top: 10%;
     }
 
     #om {
@@ -514,6 +499,13 @@ i {
         left: 360px;
         top: 350px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #contact {
+      display: flex;
+      position: relative;
+      right: 10px;
+      transform: translateY(40px);
     }
 
    .adress {
