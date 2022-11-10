@@ -81,7 +81,6 @@ h6 {
     max-width: 400px;
     padding: 2em;
     box-shadow: 0 10px 30px -10px rgb(0, 0, 0);
-    // position: absolute;
     left: 200px;
 }
 
@@ -108,7 +107,7 @@ aside {
   width: 250px;
   margin: auto;
   border-radius: 50%;
-  box-shadow: 0 0.45rem 0.45rem 0.45rem rgb(199, 199, 199);
+  box-shadow: v.$shadow;
 }
 
 .namn1 {
@@ -127,7 +126,8 @@ aside {
   font-family: sans-serif;
   transform: translateY(200%);
    left: 100px;
-  background-color: rgb(209, 209, 209);
+  background-color:v.$bgcolor; 
+  // rgb(209, 209, 209)
 }
 
 .namn1 {
